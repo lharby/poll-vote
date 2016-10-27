@@ -1,0 +1,250 @@
+@import 'normalize.css';
+
+body {
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size:.8em;
+}
+
+a:link, 
+a:visited {
+	color: #ec0000;
+	text-decoration: none;
+	transition: all 333ms ease-in;
+}
+
+a:hover {
+	text-decoration: underline;
+	transition: all 333ms ease-in;
+}
+
+p {
+	margin:0;
+	padding:0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+header {
+	background:#999;
+	padding: 0 7px;
+}
+
+header ul {
+	display: table;
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	width:100%;
+}
+
+header li {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width:33.33333333%;
+}
+
+header .indicator {
+	font-size: 17px;
+	color: #FFF;
+	transition: all 333ms ease-in;
+}
+
+header .active {
+	color: #EC0000;
+}
+
+header li:first-child {
+	text-align: left;
+}
+
+header li:last-child {
+	text-align: right;
+}
+
+header ul li a:link,
+header ul li a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+
+header ul li a:hover {
+	color: #EEE;
+}
+
+.page-wrapper {
+	padding:30px 20px;
+}
+
+footer {
+	position:fixed;
+	bottom:0;
+	background:#EEE;
+	width:100%;
+}
+
+
+/* vote form */
+.list {
+	border:2px solid #000;
+	margin:50px auto;
+	width:500px;
+	list-style:none;
+}
+
+.list li {
+	padding:18px 12px;
+	border-bottom: 2px solid #000;
+}
+
+.list li:last-child {
+	border-bottom: none;
+}
+
+.list li.reduced {
+	padding:8px 12px 14px 12px;
+}
+
+.list li .box {
+	position:relative;
+	border:2px solid black;
+	border-radius:6px;
+	margin-left: 20px;
+	padding:12px 4px;
+	color:red;
+}
+
+.list li .box:before {
+	position:absolute;
+	font-size:36px;
+	top:1px;
+	left:6px;
+}
+
+.list p {
+	display: inline-block;
+}
+
+.list input {
+  	opacity:0;
+	cursor:pointer;
+	position:relative;
+	width:30px;
+	height:30px;
+	top:10px;
+	left:4px;
+}
+
+#submit {
+    display: block;
+    width: 50px;
+	padding:7px 13px;
+	text-decoration:none;
+	background:#88AA00;
+	color:#FFF;
+	margin: 30px auto;
+    text-align: center;
+}
+
+#submit.disabled {
+    potiner-events:none;
+    opacity:0.2;
+}
+
+.entry,
+.success {
+	display:none;
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background: #000;
+}
+
+.success {
+	background:#FFF;
+}
+
+.entry p {
+	color:#FFF;
+}
+
+.entry p,
+.success p {
+	margin-bottom: 20px;
+}
+
+.wrapper {
+	top:50%;
+	left:50%;
+	width:500px;
+	height:40px;
+	margin-left:-250px;
+	margin-top:-20px;
+	position:absolute;
+	text-align:center;
+}
+
+.entry .close,
+.success .close {
+	color:#FFF;
+	position:fixed;
+	top:10px;
+	right:10px;
+	cursor:pointer;
+}
+
+.success .close {
+	color:#000;
+}
+
+.result {
+	text-decoration: underline;
+}
+
+.effect {
+	transition: all 400ms ease-in;
+	background: #333;
+	color:#FC0;
+}
+
+.rightJustify {
+	padding-top: 3px!important;
+	text-align: right;
+}
+
+.icon:before {
+	position:relative;
+	top:3px;
+	display: inline-block;
+	content:"\2612";
+	font-size:24px;
+}
+/* end vote form */
+
+
+/* -------------------------------
+	CLEARFIX FLOATING FIXES
+---------------------------------- */
+.clearfix:after { 
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+.clear { overflow:hidden; clear:both; height:1px; margin:-1px 0px 0px 0px; font-size:1px; }
+.clear-simple {clear:both; }
