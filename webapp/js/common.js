@@ -22,12 +22,12 @@ $(document).ready(function(){
 		  		vote = $(this).val();
 				submit.removeClass('disabled');
 		  	};
-		  	sendVote(vote);
 		});
 
 		submit.on('click',function(){
 			$.cookie('voted',vote);
 			$('.result').html(cookieValue);
+			sendVote(vote);
 			success.show();
 			return false;
 		});
@@ -58,10 +58,9 @@ $(document).ready(function(){
 			type:'POST',
 			url:'data/poll_vote.php?vote=' + data,
 			success:function(){
-				console.log('Data sent');
 			},
 			error: function(status){
-				console.log(status, 'Some error');
+				console.log(status, 'There was an error');
 			}
 		});
 	}
