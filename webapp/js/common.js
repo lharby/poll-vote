@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 		// submit the data 
 		submit.on('click',function(){
-			$.cookie('voted',vote, { expires: 1095 });
+			$.cookie('voted',vote, {expires: 1095});
 			$('.result').html(cookieValue);
 			sendVote(vote);
 			success.show();
@@ -66,7 +66,7 @@ $(document).ready(function(){
 		data = int,true;
 		$.ajax({
 			type:'POST',
-			url:'data/poll_vote.php?vote=' + data,
+			url:'/data/poll_vote.php?vote=' + data,
 			success:function(){
 			},
 			error: function(status){
