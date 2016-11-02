@@ -92,40 +92,44 @@ footer {
 
 
 /* vote form */
-.list {
-	border:2px solid #000;
+.imgBG {
+	position: relative;
+	background: url("../img/ballot-sm.png") 0 0 no-repeat;
 	margin:50px auto;
-	width:500px;
 	list-style:none;
+	width:500px;
+	height:319px;
+}
+
+.list {
+	position:absolute;
+	bottom:7px;
+	right:21px;
+	height:114px;
+	width:49px;
 }
 
 .list li {
-	padding:18px 12px;
-	border-bottom: 2px solid #000;
-}
-
-.list li:last-child {
-	border-bottom: none;
-}
-
-.list li.reduced {
-	padding:8px 12px 14px 12px;
+	height:52px;
+	margin-bottom: 10px;
 }
 
 .list li .box {
 	position:relative;
-	border:2px solid black;
-	border-radius:6px;
-	margin-left: 20px;
-	padding:12px 4px;
-	color:red;
 }
 
-.list li .box:before {
+.list li .selected {
+	display: inline-block;
+	background: url("../img/cross.svg") 4px 5px no-repeat;
+	background-size: 40px;
+}
+
+
+.list li .selected:before {
 	position:absolute;
-	font-size:36px;
 	top:1px;
 	left:6px;
+	content:"";
 }
 
 .list p {
@@ -136,10 +140,10 @@ footer {
   	opacity:0;
 	cursor:pointer;
 	position:relative;
-	width:30px;
-	height:30px;
-	top:10px;
-	left:4px;
+	width:40px;
+	height:40px;
+	top:5px;
+	left:5px;
 }
 
 #submit {
@@ -154,7 +158,7 @@ footer {
 }
 
 #submit.disabled {
-    potiner-events:none;
+    pointer-events:none;
     opacity:0.2;
 }
 

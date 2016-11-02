@@ -12,14 +12,15 @@ $(document).ready(function(){
 		var checked 	= false;
 		var voteYes 	= 'become a UK citizen';
 		var voteNo 		= 'not become a UK citizen';
+		var selectClass = 'selected';
 		var vote;
 		name.html(person);
 
 		// record the option selected in the radio input
 		input.bind('change',function(){
 			var wrapper = $(this).parent();
-			wrappers.removeClass('ion-close');
-			wrapper.addClass('ion-close')
+			wrappers.removeClass(selectClass);
+			wrapper.addClass(selectClass)
 			if($(this).is(':checked')){
 		  		checked = true;
 		  		vote = $(this).val();
