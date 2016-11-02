@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 		// submit the data 
 		submit.on('click',function(){
-			$.cookie('voted',vote);
+			$.cookie('voted',vote, { expires: 1095 });
 			$('.result').html(cookieValue);
 			sendVote(vote);
 			success.show();
