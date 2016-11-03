@@ -92,6 +92,12 @@ footer {
 
 
 /* vote form */
+.centre {
+	text-align: center;
+	margin:auto;
+	width:500px;
+}
+
 .imgBG {
 	position: relative;
 	background: url("../img/ballot-sm.png") 0 0 no-repeat;
@@ -99,6 +105,15 @@ footer {
 	list-style:none;
 	width:500px;
 	height:319px;
+}
+
+.imgWrapper li {
+	float:left;
+	padding:25px;
+}
+
+.imgWrapper li img {
+	width:200px;
 }
 
 .list {
