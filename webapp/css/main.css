@@ -119,6 +119,8 @@ footer {
 
 .imgWrapper li img {
 	width:200px;
+	height: 200px;
+	background:url("../img/loading.gif") center center no-repeat #F9F9F9;
 }
 
 .list {
@@ -183,7 +185,8 @@ footer {
 }
 
 .entry,
-.success {
+.success,
+.loading {
 	display:none;
 	position:fixed;
 	top:0;
@@ -193,7 +196,8 @@ footer {
 	background: #000;
 }
 
-.success {
+.success,
+.loading {
 	background:#FFF;
 }
 
