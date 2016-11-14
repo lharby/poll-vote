@@ -107,6 +107,11 @@ footer {
 	height:319px;
 }
 
+.imgWrapper {
+	width:500px;
+	margin:0 auto;
+}
+
 .imgWrapper li {
 	float:left;
 	padding:25px;
