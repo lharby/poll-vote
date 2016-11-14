@@ -185,8 +185,7 @@ footer {
 }
 
 .entry,
-.success,
-.loading {
+.success {
 	display:none;
 	position:fixed;
 	top:0;
@@ -196,8 +195,7 @@ footer {
 	background: #000;
 }
 
-.success,
-.loading {
+.success {
 	background:#FFF;
 }
 
